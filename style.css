@@ -47,8 +47,11 @@
     align-items: center;
     justify-content: space-between;
   }
+
   .logo img {
-    height: 50px;
+    transform: scale(2);
+    transform-origin: left center;
+    max-height: 80px;
   }
   .nav {
     position: relative;
@@ -692,7 +695,7 @@
 .hero-section {
   position: relative;
   min-height: 100vh;
-  background-image: url('./assets/img/bg_laser_inova.png');
+  background-image: url('./assets/img/bg_laser_inoca_mb.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -751,7 +754,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .hero-section {
-    background-image: url('./assets/img/bg_laser_inoca_mb.png');
+    background-image: url('./assets/img/bg_laser_inoca_mb.webp');
   }
   .hero-content h1 {
     font-size: 2rem;
@@ -763,5 +766,184 @@
 @media (min-width: 1024px) {
   .hero-section {
     background-attachment: fixed;
+  }
+}
+
+/* ===== GALERÍA CON SWIPER ===== */
+.section-white {
+  background-color: #f8f8f8;
+  padding: 4rem 0;
+}
+
+.section-white h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e50914;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.section-white p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Estilos Swiper */
+.swiper {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.03);
+}
+
+/* Paginación Swiper */
+.swiper-pagination {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+  background: #e50914;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e50914;
+  opacity: 1;
+}
+
+/* Responsive Swiper */
+@media (max-width: 768px) {
+  .swiper-slide img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+}
+
+.wa {
+  background-color: var(--whatsapp);
+}
+
+/* Posicionamiento del dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  padding: 0.5rem 0;
+  list-style: none;
+  border-radius: 6px;
+  min-width: 220px;
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #e50914;
+  color: white;
+}
+
+/* Mostrar menú al hacer hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Ícono flecha hacia abajo */
+.dropdown > a i {
+  margin-left: 0.4rem;
+  font-size: 0.8rem;
+}
+
+/* Opcional: mostrar flecha también en responsive */
+@media (max-width: 992px) {
+  .dropdown-menu {
+    position: static;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .dropdown-menu a {
+    padding-left: 2rem;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+.dropdown-menu.show {
+  display: block !important;
+}
+
+
+@media (max-width: 992px) {
+  .dropdown-menu {
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .dropdown-menu a {
+    padding-left: 1.5rem;
+    color: #fff;
+    background-color: transparent;
+    font-size: 0.95rem;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: var(--primary);
+  }
+
+  .dropdown > a i {
+    float: right;
+    margin-right: 0.5rem;
   }
 }

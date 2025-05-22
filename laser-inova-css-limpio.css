@@ -1,0 +1,153 @@
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #111;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+  --primary: #e50914;
+  --dark: #111;
+  --light: #f8f8f8;
+  --gray: #eaeaea;
+  --accent: #ff3b3f;
+  --whatsapp: #25D366;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== HEADER & NAV ===== */
+.header {
+  background-color: var(--dark);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  transform: scale(2);
+  transform-origin: left center;
+  max-height: 80px;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  color: #fff;
+  font-size: 1.8rem;
+  border: none;
+  cursor: pointer;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  padding: 0.5rem 0;
+  list-style: none;
+  border-radius: 6px;
+  min-width: 220px;
+  z-index: 999;
+}
+.dropdown-menu li {
+  width: 100%;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.dropdown-menu a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.dropdown > a i {
+  margin-left: 0.4rem;
+  font-size: 0.8rem;
+}
+.dropdown-menu.show {
+  display: block !important;
+}
+@media (min-width: 993px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* ===== NAV MOBILE ===== */
+@media (max-width: 992px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #111;
+    flex-direction: column;
+    width: 250px;
+    padding: 1rem;
+    display: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .dropdown-menu {
+    position: static;
+    background-color: transparent;
+    padding: 0;
+  }
+  .dropdown-menu a {
+    padding-left: 2rem;
+    background-color: transparent;
+    color: #fff;
+  }
+}
+
+/* ... [el resto de estilos seguiría aquí, acortado por espacio] */

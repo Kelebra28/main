@@ -4,11 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grabado y Corte Láser en CDMX | Laser Inova</title>
+  <title>Grabado y Corte Láser en CDMX | Personaliza Regalos y Productos con Laser Inova</title>
   <meta name="description"
-    content="Servicio de corte y grabado láser profesional en CDMX. Grabamos madera, espejos y metal para empresas, regalos y eventos.">
-  <meta name="description"
-    content="Grabado y corte láser en CDMX. Personalizamos espejos, madera y metal para empresas, regalos y emprendedores. Solicita tu cotización con Laser Inova.">
+    content="Grabado y corte láser profesional en CDMX. Personalizamos espejos, madera y metal para empresas, eventos, regalos y emprendedores. Cotiza con Laser Inova.">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="canonical" href="https://www.laserinova.com/" />
+  <meta name="keywords"
+    content="grabado láser, corte láser, CDMX, grabado en espejo, grabado en madera, grabado en metal, regalos personalizados, grabado corporativo">
+
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Laser Inova",
+        "image": "https://www.laserinova.com/inova_laser_og_ready.png",
+        "url": "https://www.laserinova.com",
+        "telephone": "+52 56 1995 9385",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cuichapa 213",
+          "addressLocality": "Ciudad de México",
+          "addressRegion": "CDMX",
+          "postalCode": "02480",
+          "addressCountry": "MX"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 19.491835,
+          "longitude": -99.191547
+        },
+        "openingHoursSpecification": [
+        {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "11:00",
+          "closes": "17:00"
+        }
+      ],
+        "priceRange": "$$",
+        "description": "Servicio profesional de grabado y corte láser en CDMX. Grabamos madera, espejo y metal para empresas, eventos y emprendedores. Cotiza hoy con Laser Inova.",
+        "sameAs": [
+          "https://www.instagram.com/laserinova23"
+        ]
+      }
+      </script>
+
+
   <!-- Meta etiquetas para redes sociales (Open Graph) -->
   <meta property="og:title" content="Laser Inova - Haz que tu marca brille" />
   <meta property="og:description"
@@ -19,13 +72,29 @@
   <meta property="og:url" content="https://www.laserinova.com" />
   <meta property="og:type" content="website" />
   <link rel="icon" href="./assets/img/favicon_inova_laser.svg" type="image/svg+xml">
+  <!-- Preload imagen hero para escritorio -->
+  <link rel="preload" as="image" href="./assets/img/bg_laser_inova.webp" type="image/webp">
+
+  <!-- Preload imagen hero para móvil -->
+  <link rel="preload" as="image" href="./assets/img/bg_laser_inoca_mb.webp" type="image/webp"
+    media="(max-width: 768px)">
 
   <!-- Estilos y Librerías -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   <script src="https://kit.fontawesome.com/bebc49f862.js" crossorigin="anonymous"></script>
   <meta name="google-site-verification" content="xLexKAFDq-OGWO5uXmbzkCB-yAGpcjUXMTxzucvNEPU" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ET4MM9DNK0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-ET4MM9DNK0');
+  </script>
   <link rel="stylesheet" href="./style.css" />
+  <!-- <link rel="stylesheet" href="./laser-inova-css-limpio.css"> -->
 </head>
 
 <body>
@@ -33,14 +102,24 @@
   <header class="header">
     <div class="container header-flex">
       <div class="logo">
-        <img src="./assets/img/inova_laser_transparent.png" alt="Logo Laser Inova">
+        <img src="./assets/img/laser_inova_navbar_mas_grande.png" alt="Logo Laser Inova">
       </div>
       <nav class="nav">
-        <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+        <button name="menu-toggle" class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
         <ul class="nav-links" id="nav-links">
           <li><a href="#hero">Inicio</a></li>
           <li><a href="#que-hacemos">¿Qué hacemos?</a></li>
-          <li><a href="#servicios">Servicios</a></li>
+          <li class="dropdown">
+            <a href="#servicios">Servicios <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="./grabado_laser.html">Grabado en Laser</a></li>
+              <li><a href="./grabado_metal.html">Grabado en Metal</a></li>
+              <li><a href="./grabado_espejos.html">Grabado en Espejo</a></li>
+              <li><a href="./grabado_medera.html">Grabado en Madera</a></li>
+              <li><a href="./corte_laser.html">Corte Láser</a></li>
+              <li><a href="./grabado_corporativo.html">Grabado Corporativo</a></li>
+            </ul>
+          </li>
           <li><a href="#proceso">Proceso</a></li>
           <li><a href="#beneficios">Beneficios</a></li>
           <li><a href="#galeria">Galería</a></li>
@@ -293,10 +372,30 @@
   </section>
 
   <!-- WHATSAPP -->
-  <a href="https://wa.me/525512431147" class="whatsapp" target="_blank">
+  <a href="https://wa.me/525619959385" class="whatsapp" target="_blank" aria-label="Contáctanos por WhatsApp">
     <i class="fa-brands fa-square-whatsapp fa-xl"></i>
   </a>
 
+
+  <section id="ubicacion" class="section-white">
+    <div class="container">
+      <h2><i class="fas fa-map-marker-alt"></i> ¿Dónde estamos?</h2>
+      <p>Visítanos en nuestro taller ubicado en Azcapotzalco, CDMX.</p>
+  
+      <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.2560389251007!2d-99.20374292381257!3d19.48761718180361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2028ff506eda3%3A0x46063795f2a37abc!2sCuichapa%20223%2C%20Petrolera%2C%20Azcapotzalco%2C%2002480%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1747943048535!5m2!1sen!2smx" 
+          width="100%" 
+          height="400" 
+          style="border:0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">

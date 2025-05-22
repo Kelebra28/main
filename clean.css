@@ -1,0 +1,458 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #111;
+    background-color: #fff;
+    scroll-behavior: smooth;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* ===== VARIABLES ===== */
+  :root {
+    --primary: #e50914;
+    --dark: #111;
+    --light: #f8f8f8;
+    --gray: #eaeaea;
+    --accent: #ff3b3f;
+    --whatsapp: #25D366;
+  }
+  
+  /* ===== LAYOUT ===== */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  /* ===== HEADER & NAVIGATION ===== */
+  .header {
+    background-color: var(--dark);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    transform: scale(2);
+    transform-origin: left center;
+    max-height: 80px;
+  }
+  
+  .nav {
+    position: relative;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    color: #fff;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: var(--primary);
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #111;
+    padding: 0.5rem 0;
+    list-style: none;
+    border-radius: 6px;
+    min-width: 220px;
+    z-index: 999;
+  }
+  
+  .dropdown-menu li {
+    width: 100%;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #e50914;
+  }
+  
+  .dropdown > a i {
+    margin-left: 0.4rem;
+    font-size: 0.8rem;
+  }
+  
+  /* ===== HERO SECTION ===== */
+  .hero-section {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('./assets/img/bg_laser_inoca_mb.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .hero-content .glow {
+    color: var(--primary);
+    text-shadow: 0 0 10px rgba(255,0,0,0.8);
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    color: #eee;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #c90e0e;
+  }
+  
+  /* ===== SECTIONS ===== */
+  section {
+    padding: 6rem 0;
+  }
+  
+  .section-white {
+    background-color: var(--light);
+    color: var(--dark);
+  }
+  
+  .section-gray {
+    background-color: var(--gray);
+  }
+  
+  .section-dark {
+    background-color: var(--dark);
+    color: #fff;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  h2 i {
+    color: var(--primary);
+    font-size: 1.5rem;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* ===== CARDS ===== */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: #fff;
+    color: var(--dark);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card i {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* ===== SWIPER GALLERY ===== */
+  .swiper {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .swiper-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .swiper-slide img:hover {
+    transform: scale(1.03);
+  }
+  
+  .swiper-pagination {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .swiper-pagination-bullet {
+    background: var(--primary);
+    opacity: 0.6;
+  }
+  
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  
+  /* ===== FAQ ===== */
+  .faq {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    background: #fff;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .faq-question {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 1.2rem 1rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #333;
+    padding: 0 1rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  .faq-item.open .faq-answer {
+    padding: 1rem;
+    max-height: 200px;
+    opacity: 1;
+  }
+  
+  /* ===== FOOTER ===== */
+  .footer {
+    background-color: var(--dark);
+    color: #ccc;
+    padding: 3rem 1rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer-bottom {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+  }
+  
+  /* ===== WHATSAPP BUTTON ===== */
+  .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    z-index: 999;
+  }
+  
+  .whatsapp i {
+    color: var(--whatsapp);
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 992px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #111;
+      flex-direction: column;
+      width: 200px;
+      padding: 1rem;
+      display: none;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      background-color: transparent;
+      padding: 0;
+    }
+  
+    .dropdown-menu a {
+      padding-left: 2rem;
+      background-color: transparent;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .swiper-slide img {
+      max-height: 300px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .card, .paso {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-section {
+      background-attachment: fixed;
+    }
+  }
