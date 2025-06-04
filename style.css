@@ -947,3 +947,134 @@
     margin-right: 0.5rem;
   }
 }
+
+.seo-links {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.seo-links h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.seo-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  display: grid;
+  gap: 1rem;
+}
+
+.seo-links li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  color: #111;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-weight: 500;
+}
+
+.seo-links li a:hover {
+  background-color: var(--primary);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .seo-links h2 {
+    font-size: 1.5rem;
+  }
+
+  .seo-links li a {
+    font-size: 1rem;
+  }
+}
+
+.reviews-section {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.reviews-section h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.review-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-card .stars {
+  color: #f5c518;
+  margin-bottom: 0.5rem;
+}
+
+.review-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.review-card .author {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #111;
+}
+
+.review-card a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 0.9rem;
+}
+
+.review-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .reviews-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start; /* o center si quieres centrado */
+}
+
+@media (max-width: 600px) {
+  .hero-buttons {
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
