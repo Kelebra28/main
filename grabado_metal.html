@@ -9,7 +9,14 @@
         content="Grabado láser en metal en CDMX. Personalizamos termos, plumas, carpetas y artículos corporativos para empresas, regalos y promociones. Alta calidad y precisión." />
     <link rel="canonical" href="https://www.laserinova.com/grabado_metal" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./assets/img/favicon_inova_laser.svg" type="image/svg+xml" />
+    <!-- Favicon para Google y navegadores antiguos -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Alternativa moderna en SVG -->
+    <link rel="icon" href="./favicon_inova_laser.svg" type="image/svg+xml">
+    <!-- Fallback PNG para móviles o navegadores antiguos -->
+    <link rel="icon" href="./favicon_inova_laser.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_inova_laser.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon_inova_laser.png">
     <script src="https://kit.fontawesome.com/bebc49f862.js" crossorigin="anonymous"></script>
     <script type="application/ld+json">
         {
@@ -64,35 +71,37 @@
 <body>
     <header class="header">
         <div class="container header-flex">
-          <div class="logo">
-            <img src="./assets/img/laser_inova_navbar_mas_grande.png" alt="Logo Laser Inova">
-          </div>
-          <nav class="nav">
-            <button name="menu-toggle" class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
-            <ul class="nav-links" id="nav-links">
-              <li><a href="./index.html#hero">Inicio</a></li>
-              <li><a href="./index.html#que-hacemos">¿Qué hacemos?</a></li>
-              <li class="dropdown">
-                <a href="#servicios">Servicios <i class="fas fa-caret-down"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a href="./grabado_laser.html">Grabado en Laser</a></li>
-                  <li><a href="./grabado_metal.html">Grabado en Metal</a></li>
-                  <li><a href="./grabado_espejos.html">Grabado en Espejo</a></li>
-                  <li><a href="./grabado_madera.html">Grabado en Madera</a></li>
-                  <li><a href="./corte_laser.html">Corte Láser</a></li>
-                  <li><a href="./grabado_corporativo.html">Grabado Corporativo</a></li>
+            <div class="logo">
+                <img src="./assets/img/laser_inova_navbar_mas_grande.png" alt="Logo Laser Inova">
+            </div>
+            <nav class="nav">
+                <button name="menu-toggle" class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="./index.html#hero">Inicio</a></li>
+                    <li><a href="./index.html#que-hacemos">¿Qué hacemos?</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios">Servicios <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./grabado_laser.html">Grabado en Laser</a></li>
+                            <li><a href="./grabado_metal.html">Grabado en Metal</a></li>
+                            <li><a href="./grabado_espejos.html">Grabado en Espejo</a></li>
+                            <li><a href="./grabado_madera.html">Grabado en Madera</a></li>
+                            <li><a href="./corte_laser.html">Corte Láser</a></li>
+                            <li><a href="./grabado_corte_acrilico.html">Grabado/Corte Acrilico</a></li>
+                            <li><a href="./impresion_dft_uv.html">DTF UV</a></li>
+                            <li><a href="./grabado_corporativo.html">Grabado Corporativo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index.html#proceso">Proceso</a></li>
+                    <li><a href="./index.html#beneficios">Beneficios</a></li>
+                    <li><a href="./index.html#galeria">Galería</a></li>
+                    <li><a href="./index.html#faqs">FAQs</a></li>
+                    <li><a href="./index.html#contacto">Contacto</a></li>
                 </ul>
-              </li>
-              <li><a href="./index.html#proceso">Proceso</a></li>
-              <li><a href="./index.html#beneficios">Beneficios</a></li>
-              <li><a href="./index.html#galeria">Galería</a></li>
-              <li><a href="./index.html#faqs">FAQs</a></li>
-              <li><a href="./index.html#contacto">Contacto</a></li>
-            </ul>
-          </nav>
+            </nav>
         </div>
-      </header>
-    
+    </header>
+
     <section class="section-white">
         <div class="container">
             <h1 style="text-align:center; color:var(--primary);">Grabado en Metal en CDMX</h1>
@@ -121,7 +130,8 @@
             </ul>
 
             <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser" class="btn wa">Solicita tu cotización por WhatsApp</a>
+                <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser"
+                    class="btn wa">Solicita tu cotización por WhatsApp</a>
             </div>
         </div>
     </section>
@@ -191,12 +201,18 @@
             </p>
 
             <div class="gallery-grid">
-                <img loading="lazy" src="./assets/img/termos_editados_profesional.jpg" alt="Termos personalizados con grabado láser en CDMX">
-                <img loading="lazy" src="./assets/img/petacas_ahora_sí_corregidas.jpg" alt="Petacas metálicas personalizadas con grabado láser en CDMX">
-                <img loading="lazy" src="./assets/img/usb_dg_audiosound_editada.jpg" alt="Memoria USB personalizada con grabado láser para empresa">
-                <img loading="lazy" src="./assets/img/placa_reconocimiento_final_ok.jpg" alt="Placa de reconocimiento personalizada con grabado láser para eventos">
-                <img loading="lazy" src="./assets/img/pluma_grabado_editado.jpg" alt="Pluma metálica personalizada con grabado láser corporativo">
-                <img loading="lazy" src="./assets/img/llavero_compra_venta_editado.jpg" alt="Llavero personalizado con logo para entrega inmobiliaria">
+                <img loading="lazy" src="./assets/img/termos_editados_profesional.jpg"
+                    alt="Termos personalizados con grabado láser en CDMX">
+                <img loading="lazy" src="./assets/img/petacas_ahora_sí_corregidas.jpg"
+                    alt="Petacas metálicas personalizadas con grabado láser en CDMX">
+                <img loading="lazy" src="./assets/img/usb_dg_audiosound_editada.jpg"
+                    alt="Memoria USB personalizada con grabado láser para empresa">
+                <img loading="lazy" src="./assets/img/placa_reconocimiento_final_ok.jpg"
+                    alt="Placa de reconocimiento personalizada con grabado láser para eventos">
+                <img loading="lazy" src="./assets/img/pluma_grabado_editado.jpg"
+                    alt="Pluma metálica personalizada con grabado láser corporativo">
+                <img loading="lazy" src="./assets/img/llavero_compra_venta_editado.jpg"
+                    alt="Llavero personalizado con logo para entrega inmobiliaria">
             </div>
     </section>
 
@@ -207,7 +223,8 @@
         confiable y resultados impactantes.
     </p>
     <div style="text-align:center; margin-top:1.5rem; margin-bottom: 1.5rem;">
-        <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser" class="btn wa">Cotiza tu grabado por WhatsApp</a>
+        <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser" class="btn wa">Cotiza tu
+            grabado por WhatsApp</a>
     </div>
     <section class="section-white">
         <div class="container" style="text-align: center;">
@@ -223,10 +240,11 @@
         </div>
     </section>
 
-  <!-- WHATSAPP -->
-  <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser" class="whatsapp" target="_blank" aria-label="Contáctanos por WhatsApp">
-    <i class="fa-brands fa-square-whatsapp fa-xl"></i>
-  </a>
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser" class="whatsapp"
+        target="_blank" aria-label="Contáctanos por WhatsApp">
+        <i class="fa-brands fa-square-whatsapp fa-xl"></i>
+    </a>
 
 
     <footer class="footer">

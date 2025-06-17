@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   <link rel="canonical" href="https://www.laserinova.com/" />
   <meta name="keywords"
-    content="grabado láser, corte láser, CDMX, grabado en espejo, grabado en madera, grabado en metal, regalos personalizados, grabado corporativo">
+    content="grabado láser, corte láser, CDMX, grabado en espejo, grabado en madera, grabado en metal, grabado en acrílico, plumas grabadas, termos personalizados, regalos personalizados, grabado corporativo, corte en acrílico, grabado en plumas, grabado en termos, artículos promocionales CDMX">
 
   <script type="application/ld+json">
       {
@@ -71,7 +71,17 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://www.laserinova.com" />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="./assets/img/favicon_inova_laser.svg" type="image/svg+xml">
+
+
+  <!-- Favicon para Google y navegadores antiguos -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- Alternativa moderna en SVG -->
+  <link rel="icon" href="./favicon_inova_laser.svg" type="image/svg+xml">
+  <!-- Fallback PNG para móviles o navegadores antiguos -->
+  <link rel="icon" href="./favicon_inova_laser.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_inova_laser.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon_inova_laser.png">
+
   <!-- Preload imagen hero para escritorio -->
   <link rel="preload" as="image" href="./assets/img/bg_laser_inova.webp" type="image/webp">
 
@@ -105,7 +115,8 @@
         <img src="./assets/img/laser_inova_navbar_mas_grande.png" alt="Logo Laser Inova">
       </div>
       <nav class="nav">
-        <button name="menu-toggle" class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación"><i class="fas fa-bars"></i></button>
+        <button name="menu-toggle" class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación"><i
+            class="fas fa-bars"></i></button>
         <ul class="nav-links" id="nav-links">
           <li><a href="#hero">Inicio</a></li>
           <li><a href="#que-hacemos">¿Qué hacemos?</a></li>
@@ -117,6 +128,8 @@
               <li><a href="./grabado_espejos.html">Grabado en Espejo</a></li>
               <li><a href="./grabado_madera.html">Grabado en Madera</a></li>
               <li><a href="./corte_laser.html">Corte Láser</a></li>
+              <li><a href="./grabado_corte_acrilico.html">Grabado/Corte Acrilico</a></li>
+              <li><a href="./impresion_dft_uv.html">DTF UV</a></li>
               <li><a href="./grabado_corporativo.html">Grabado Corporativo</a></li>
             </ul>
           </li>
@@ -137,9 +150,10 @@
       <p>Diseñamos experiencias visuales únicas con tecnología láser profesional en CDMX.</p>
       <div class="hero-buttons">
         <a href="#contacto" class="btn">Solicita cotización por correo</a>
-        <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser" class="btn wa">Solicita cotización por WhatsApp</a>
+        <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser" class="btn wa">Solicita
+          cotización por WhatsApp</a>
       </div>
-      
+
     </div>
   </section>
 
@@ -188,6 +202,14 @@
           </p>
         </div>
 
+        <!-- Grabado en Acrílico -->
+        <div class="card">
+          <i class="fas fa-shapes"></i>
+          <h3>Grabado y Corte en Acrílico</h3>
+          <p>Personalizamos acrílico con cortes y grabado láser de alta precisión. Ideal para letreros, señalética,
+            artículos decorativos y productos promocionales.</p>
+        </div>
+
         <!-- Grabado en Madera -->
         <div class="card">
           <i class="fas fa-tree"></i>
@@ -222,6 +244,37 @@
           <h3>Grabado Corporativo</h3>
           <p>Soluciones para eventos empresariales, identidad interna o regalos institucionales con tu logotipo.</p>
         </div>
+
+        <!-- Nuevo servicio: Impresión DTF -->
+        <!-- Impresión UV DTF -->
+        <div class="card">
+          <i class="fas fa-sticky-note"></i>
+          <h3>Impresión DTF UV</h3>
+          <p>Stickers resistentes y brillantes para termos, libretas, cajas, acrílico y más. Personaliza cualquier
+            superficie sólida sin calor ni plancha.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-award"></i>
+          <h3>Placas Conmemorativas</h3>
+          <p>Diseñamos y grabamos placas en acrílico, madera o metal. Perfectas para reconocimientos, premiaciones o eventos institucionales.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-sign"></i>
+          <h3>Señalética Láser</h3>
+          <p>Fabricamos señalética elegante y funcional para oficinas, negocios o eventos. Grabada o cortada en acrílico o MDF.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-wine-glass-alt"></i>
+          <h3>Grabado en Vidrio</h3>
+          <p>Copas, vasos y frascos grabados con láser para bodas, bares o regalos especiales. Elegancia en cada detalle.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-city"></i>
+          <h3>Maquetas para Arquitectos</h3>
+          <p>Cortamos piezas precisas en MDF o acrílico para maquetas profesionales. Ideal para estudiantes, despachos o concursos.</p>
+        </div>
+                                
+
       </div>
     </div>
   </section>
@@ -326,30 +379,35 @@
     <div class="container reviews-section">
       <h2><i class="fas fa-star"></i> Lo que dicen nuestros clientes</h2>
       <div class="review-grid">
-  
+
         <div class="review-card">
           <div class="stars">★★★★★</div>
-          <p>La atención es excelente desde el inicio, en cuanto a la entrega es rápida y los servicios que prestan son de muy buena calidad, sin duda es altamente recomendable.</p>
+          <p>La atención es excelente desde el inicio, en cuanto a la entrega es rápida y los servicios que prestan son
+            de muy buena calidad, sin duda es altamente recomendable.</p>
           <div class="author">Edaurdo M.</div>
           <a href="https://g.co/kgs/sRH3cSe" target="_blank">Ver en Google</a>
         </div>
-  
+
         <div class="review-card">
           <div class="stars">★★★★★</div>
           <p>Excelente servicio y cumplió con todas mis expectativas. 10/10</p>
           <div class="author">Ivan B.</div>
           <a href="https://g.co/kgs/sRH3cSe" target="_blank">Ver en Google</a>
         </div>
-  
+
         <div class="review-card">
           <div class="stars">★★★★</div>
-          <p>Pedí un espejo grabado para una amiga y quedó muy bonito. El servicio fue rápido y me respondieron todas mis dudas, solo no le doy 5 estrellas porque me hubiera gustado más variedad de modelos. Pero en general, muy buena experiencia.</p>
+          <p>Pedí un espejo grabado para una amiga y quedó muy bonito. El servicio fue rápido y me respondieron todas
+            mis dudas, solo no le doy 5 estrellas porque me hubiera gustado más variedad de modelos. Pero en general,
+            muy buena experiencia.</p>
           <div class="author">Daniela F.</div>
           <a href="https://g.co/kgs/sRH3cSe" target="_blank">Ver en Google</a>
         </div>
         <div class="review-card">
           <div class="stars">★★★★★</div>
-          <p>Recomiendo ampliamente este negocio por su excelente calidad en el grabado y, sobre todo, por el trato amable y profesional que ofrecen. Se nota el compromiso con el cliente y la dedicación en cada detalle. ¡Una experiencia totalmente satisfactoria!</p>
+          <p>Recomiendo ampliamente este negocio por su excelente calidad en el grabado y, sobre todo, por el trato
+            amable y profesional que ofrecen. Se nota el compromiso con el cliente y la dedicación en cada detalle. ¡Una
+            experiencia totalmente satisfactoria!</p>
           <div class="author">Natalie O.</div>
           <a href="https://g.co/kgs/sRH3cSe" target="_blank">Ver en Google</a>
         </div>
@@ -361,18 +419,19 @@
         </div>
         <div class="review-card">
           <div class="stars">★★★★★</div>
-          <p>Excelente Atención y Servicio!! La calidad de los productos son muy buenos e innovadores, muy útiles para casa hogar u oficina.Lo recomiendo ampliamente.</p>
+          <p>Excelente Atención y Servicio!! La calidad de los productos son muy buenos e innovadores, muy útiles para
+            casa hogar u oficina.Lo recomiendo ampliamente.</p>
           <div class="author">Hugo B.</div>
           <a href="https://g.co/kgs/sRH3cSe" target="_blank">Ver en Google</a>
         </div>
-  
+
       </div>
       <div style="margin-top: 2rem;">
         <a href="https://g.co/kgs/sRH3cSe" class="btn" target="_blank">Leer más opiniones en Google</a>
       </div>
     </div>
   </section>
-  
+
 
   <!-- FAQ -->
   <section id="faqs" class="section-white">
@@ -428,7 +487,8 @@
   </section>
 
   <!-- WHATSAPP -->
-  <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser" class="whatsapp" target="_blank" aria-label="Contáctanos por WhatsApp">
+  <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser" class="whatsapp" target="_blank"
+    aria-label="Contáctanos por WhatsApp">
     <i class="fa-brands fa-square-whatsapp fa-xl"></i>
   </a>
 
@@ -437,16 +497,12 @@
     <div class="container">
       <h2><i class="fas fa-map-marker-alt"></i> ¿Dónde estamos?</h2>
       <p>Visítanos en nuestro taller ubicado en Azcapotzalco, CDMX.</p>
-  
+
       <div class="mapa">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.2560389251007!2d-99.20374292381257!3d19.48761718180361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2028ff506eda3%3A0x46063795f2a37abc!2sCuichapa%20223%2C%20Petrolera%2C%20Azcapotzalco%2C%2002480%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1747943048535!5m2!1sen!2smx" 
-          width="100%" 
-          height="400" 
-          style="border:0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.2560389251007!2d-99.20374292381257!3d19.48761718180361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2028ff506eda3%3A0x46063795f2a37abc!2sCuichapa%20223%2C%20Petrolera%2C%20Azcapotzalco%2C%2002480%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1747943048535!5m2!1sen!2smx"
+          width="100%" height="400" style="border:0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
     </div>
@@ -464,8 +520,8 @@
       </ul>
     </div>
   </section>
-  
-  
+
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
