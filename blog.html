@@ -15,13 +15,28 @@
   <header class="header">
     <div class="container header-flex">
       <div class="logo">
-        <a href="./index.html"><img src="./assets/img/laser_inova_navbar_mas_grande.png" alt="Logo Laser Inova"></a>
+        <img src="./assets/img/laser_inova_navbar_mas_grande.png" alt="Logo Laser Inova">
       </div>
       <nav class="nav">
-        <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <button name="menu-toggle" class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
         <ul class="nav-links" id="nav-links">
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./index.html#servicios">Servicios</a></li>
+          <li><a href="./index.html#hero">Inicio</a></li>
+          <li><a href="./index.html#que-hacemos">¿Qué hacemos?</a></li>
+          <li class="dropdown">
+            <a href="#servicios">Servicios <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="./grabado_laser.html">Grabado en Láser</a></li>
+              <li><a href="./grabado_metal.html">Grabado en Metal</a></li>
+              <li><a href="./grabado_espejos.html">Grabado en Espejo</a></li>
+              <li><a href="./grabado_madera.html">Grabado en Madera</a></li>
+              <li><a href="./corte_laser.html">Corte Láser</a></li>
+              <li><a href="./grabado_corte_acrilico.html">Grabado/Corte Acrilico</a></li>
+              <li><a href="./impresion_dft_uv.html">DTF UV</a></li>
+              <li><a href="./grabado_corporativo.html">Grabado Corporativo</a></li>
+            </ul>
+          </li>
+          <li><a href="./index.html#galeria">Galería</a></li>
+          <li><a href="./index.html#faqs">FAQs</a></li>
           <li><a href="./index.html#contacto">Contacto</a></li>
           <li><a href="./blog.html">Blog</a></li>
         </ul>
@@ -38,32 +53,46 @@
       </p>
 
       <div class="cards">
+        <!-- Artículo de acrílico -->
         <div class="card">
-          <h3>¿Qué materiales se pueden grabar con láser?</h3>
-          <p>Descubre cuáles son los materiales ideales para grabado y cómo se comportan en CO₂ y fibra.</p>
-          <a href="#" class="btn" style="margin-top:1rem;">Leer más</a>
+          <img src="./assets/blog/dtf_uv_vs_grabado_laser_acrilico.png" alt="Comparativa entre grabado láser y DTF UV en acrílico" style="border-radius: 10px; margin-bottom: 1rem;">
+          <h3>Grabado en acrílico: tipos y usos creativos</h3>
+          <p>Conoce las diferencias entre grabado láser y DTF UV sobre acrílico, y cómo aplicarlos en logos, señalética y más.</p>
+          <a href="./blog_acrilico.html" class="btn" style="margin-top:1rem;">Leer más</a>
         </div>
-
+      
+        <!-- Artículo de metal -->
         <div class="card">
-          <h3>Ideas de regalos personalizados con láser</h3>
-          <p>Desde espejos hasta termos: conoce las mejores ideas para sorprender a tus clientes o seres queridos.</p>
-          <a href="#" class="btn" style="margin-top:1rem;">Leer más</a>
+          <img src="./assets/blog/termos_grabado_metal.png" alt="Ejemplo de grabado láser en metal como termos personalizados" style="border-radius: 10px; margin-bottom: 1rem;">
+          <h3>Grabado láser en metal: cómo se ve y qué permite</h3>
+          <p>Explora qué metales se pueden grabar, cómo lucen los resultados y qué diferencia hay entre láser de fibra y CO₂.</p>
+          <a href="./blog_metal.html" class="btn" style="margin-top:1rem;">Leer más</a>
         </div>
+      </div>
+      
 
-        <div class="card">
+        <!-- <div class="card">
+          <img src="./assets/blog/errores_archivo.jpg" alt="Errores comunes al preparar archivos" style="border-radius: 10px; margin-bottom: 1rem;">
           <h3>Errores comunes al preparar tu archivo para grabado</h3>
           <p>Te explicamos qué debes evitar y cómo asegurarte de que tu diseño esté listo para producción.</p>
           <a href="#" class="btn" style="margin-top:1rem;">Leer más</a>
-        </div>
+        </div> -->
 
-        <div class="card">
+        <!-- <div class="card">
+          <img src="./assets/blog/corte_vs_grabado.jpg" alt="Diferencias entre corte y grabado láser" style="border-radius: 10px; margin-bottom: 1rem;">
           <h3>Diferencias entre corte y grabado láser</h3>
           <p>Aclara las diferencias entre ambas técnicas, sus usos y cómo elegir la correcta para tu proyecto.</p>
           <a href="#" class="btn" style="margin-top:1rem;">Leer más</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/525619959385?text=Hola%20me%20interesa%20un%20grabado%20láser" class="whatsapp" target="_blank"
+    aria-label="Contáctanos por WhatsApp">
+    <i class="fa-brands fa-square-whatsapp fa-xl"></i>
+  </a>
+
 
   <footer class="footer">
     <div class="container">
