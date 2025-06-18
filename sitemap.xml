@@ -40,4 +40,19 @@
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://www.laserinova.com/blog.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.laserinova.com/blog/acrilico.html</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.laserinova.com/blog/grabado_metal.html</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
