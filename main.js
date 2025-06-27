@@ -40,6 +40,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+    // Cierra menú al hacer clic fuera en móviles
+    document.addEventListener("click", (e) => {
+      const isInsideMenu = navLinks.contains(e.target) || menuToggle.contains(e.target);
+      if (!isInsideMenu && window.innerWidth <= 992) {
+        navLinks.classList.remove("show");
+        dropdownMenu.classList.remove("show");
+      }
+    });
+  
+
   // FAQs (acordeón)
   document.querySelectorAll('.faq-question').forEach(btn => {
     btn.addEventListener('click', () => {
